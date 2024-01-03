@@ -1,0 +1,73 @@
+<!-- template_jinja.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ title }}</title>
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+        <div class="columns">
+            <div class="column col-12">
+                <div class="column col-8 d-flex header">
+                    <img src="../img/StandardBankLtd-bangla.svg" class="logo col-6" />
+                    <div class="column col-4 header-addr">
+                        <h5 class="text-tiny text-bold">প্রধান অফিস</h5>
+                        <p class="text-tiny text-break">মেট্রোপলিটন চেম্বার বিল্ডিং (তৃতীয় তলা) 122-124 মতিঝিল সি/এ,
+                            ঢাকা-1000,
+                            বাংলাদেশ
+                            <span class="text-clip">টেলিফোন: +8802223358385 +88001709654772-3 </span>
+                            <span class="text-clip">ইমেইল: agentbanking@standardbankbd.com </span>
+                            <span class="text-clip">ওয়েব: www.standardbankbd.com </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-12 addrContainer">
+                <p class="text-break col-6">
+                    <b>তারিখঃ:</b>{{date}} <br /><br />
+                    <b class="text-large text-capitalize">{{ account_title }}</b> <br />
+                    <b>Address: </b> <span class="text-capitalize">{{ address }}</span>
+                    <br /><b>Contact: </b> +88{{ contact }}
+                </p>
+                <br />
+            </div>
+            <div class="column col-12">
+                <p class="container">
+                    সন্মানিত গ্রাহক,<br>
+                    আসসালামু আলাইকুম।
+                    <br>
+                    <br>
+                    স্ট্যান্ডার্ড ব্যাংকের সাথে ব্যাংকিং করার জন্য আপনাকে ধন্যবাদ জানাচ্ছি।
+                    <br>
+                    <br>
+                    অনিবার্য কারনবশতঃ স্ট্যান্ডার্ড ব্যাংক পিএলসি {{outletName}} এজেন্ট আউটলেটটি অত্র স্থানে চলমান রাখা
+                    সম্ভব হচ্ছে না। তাই {{closeDate}} তারিখের মধ্যে {{outletName}} এজেন্ট আউটলেট হতে আপনার হিসাবের <b>
+                        {{
+                        masked_account_no
+                        }} </b> সমুদয় অর্থ উত্তোলন করার জন্য অনুরোধ করা যাচ্ছে। <br>
+                    বিশেষ প্রয়োজনে আমাদের সাথে হিসাব অব্যাহত রাখতে চাইলে {{closeDate}} তারিখের মধ্যেই আমাদের
+                    জানানোর জন্য অনুরোধ করছি অথবা {{closeDate}} তারিখের পর আমাদের {{branch}} শাখা হতে ব্যাংকিং সেবা
+                    গ্রহন
+                    অথবা পে-অর্ডারের মাধ্যমে আপনার হিসাবের স্থিতি গ্রহন করতে পারবেন। বিস্তারিত জানতে যোগাযোগ করুন-
+                    ০১৭০৯৬৫৪৭৭২,
+                    ০১৭০৯৬৫৪৭৭৩।
+                    <br><br>
+                    শুভ কামনায়,<br><br>
+                    <img src="../img/sig.png" class="sig" /><br>
+                    <b>মনজুর মোরশেদ খান</b> <br>
+                    এভিপি এবং ইন-চার্জ <br>
+                    এজেন্ট ব্যাংকিং ডিভিশন। <br>
+                </p>
+            </div>
+            <footer></footer>
+        </div>
+    </body>
+
+</html>

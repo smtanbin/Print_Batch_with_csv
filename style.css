@@ -1,0 +1,36 @@
+.page{
+    height: var(3508px/4) ;
+    width: var(2480px/4) ;
+    box-sizing: border-box;
+    margin: 15px;
+  
+}
+.header{
+    width: 100%;
+justify-content: space-around;
+align-items:flex-start;
+justify-content: center;
+justify-items: center;
+}
+.logo{
+  /* height: 30px; */
+ 
+}
+.sig{
+  height: 100px;
+ 
+}
+
+.header-addr{
+    /* background-color: black; */
+   
+    margin-left: auto;
+  padding:  1%;
+}
+.addrContainer{
+    width: 100%;
+    /* background-color: black; */
+}
+@media print {
+  footer {page-break-after: always;}
+}
